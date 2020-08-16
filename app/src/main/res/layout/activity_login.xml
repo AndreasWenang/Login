@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:background="@mipmap/background1"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,27 +9,68 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
-    <EditText
-        android:layout_marginTop="30dp"
-        android:id="@+id/txtuser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Username/Email"
-        android:gravity="center"></EditText>
+    <ImageView
+        android:layout_width="388dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/welcome"></ImageView>
 
     <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:id="@+id/txtuser"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:hint="Username/Email"
+        android:gravity="center"
+        android:background="@drawable/edittext_style"></EditText>
+
+    <EditText
+        android:layout_marginTop="9dp"
+        android:layout_gravity="center"
         android:id="@+id/txtpass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
         android:hint="Password"
         android:password="true"
-        android:gravity="center"></EditText>
+        android:gravity="center"
+        android:background="@drawable/edittext_style"></EditText>
 
     <Button
-        android:layout_width="match_parent"
+        android:textColor="@android:color/background_dark"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="30dp"
+        android:onClick="bounce"
+        android:layout_gravity="center"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:text="LOGIN"
-        android:id="@+id/btnlogin"></Button>
+        android:id="@+id/btnlogin" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account?"/>
+        <TextView
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" register"/>
+
+    </LinearLayout
 
 
 

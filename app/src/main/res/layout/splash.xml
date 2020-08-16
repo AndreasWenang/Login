@@ -8,11 +8,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:fontFamily="sans-serif-condensed-medium"
         android:textSize="50dp"
         android:gravity="center"
-        android:text="Pecel kok abang?"
+        android:text="WELCOME"
         android:layout_height="match_parent"
         android:layout_width="match_parent" />
 
